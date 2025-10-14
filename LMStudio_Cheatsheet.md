@@ -10,7 +10,7 @@
 | stream output | Mostra l’output mentre viene generato | Attivalo per scrittura rapida, disattivalo per output completi |
 
 
-### Esempi Tipici di Context Lenght
+### Esempi tipici di Context Lenght
 
 | Dimensione modello | Range tipico | Context “reale” consigliato | Note su memoria |
 |--------------------|---------------|-----------------------------|-----------------|
