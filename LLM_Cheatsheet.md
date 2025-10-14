@@ -9,7 +9,6 @@
 | system prompt         | Istruzioni permanenti (tono, ruolo, ecc.)                    | “Riscrivi il testo in italiano chiaro e coerente”              |
 | stream output         | Mostra l’output mentre viene generato                        | Attivalo per scrittura rapida, disattivalo per output completi |
 
-
 ### Esempi tipici di Context Lenght
 
 | Dimensione modello           | Range tipico | Context “reale” consigliato | Note su memoria                        |
@@ -32,3 +31,10 @@
 | presence_penalty   | Evita di ripetere concetti già detti         | 0.5–0.8                                                                               | Utile nei testi lunghi                          |
 | frequency_penalty  | Penalizza parole ripetute troppo spesso      | 0.5–1.0                                                                               | Migliora la varietà lessicale                   |
 
+### Note
+
+- Alcuni parametri su applicazioni come LMstudio hanno nomi simili ad esempio max_new_token non è impostato di default e va abilitato limit respose
+lengh e con lo slider può essere settato in un range fino a 2048 token
+
+
+---
