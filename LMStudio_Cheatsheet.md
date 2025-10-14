@@ -3,7 +3,7 @@
 ## Parametri Principali
 
 | Parametro | Significato | Valore consigliato |
-|------------|--------------|--------------------|
+|--------------------|--------------------|--------------------|
 | context length | Numero massimo di token di input che il modello ricorda | Usa il massimo reale supportato (8k–32k) |
 | evaluation batch size | Numero di prompt processati in parallelo durante l'inferenza | 1–4 per PC con 8–16 GB RAM, 8+ su GPU potente |
 | system prompt | Istruzioni permanenti (tono, ruolo, ecc.) | “Riscrivi il testo in italiano chiaro e coerente” |
@@ -13,7 +13,7 @@
 ### Esempi tipici di Context Lenght
 
 | Dimensione modello | Range tipico | Context “reale” consigliato | Note su memoria |
-|--------------------|---------------|-----------------------------|-----------------|
+|--------------------|-------------------------|-----------------------------|----------------------------------|
 | 1B – 3B | 4k–8k | max 4k | Leggero, adatto a PC con 8–12 GB RAM |
 | 7B – 8B (es. Mistral 7B) | 8k–32k | 16k ottimale | Usa 8–12 GB VRAM o 12–16 GB RAM |
 | 13B – 14B | 16k–64k | 32k consigliato | Serve almeno 20–24 GB RAM |
