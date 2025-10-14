@@ -33,5 +33,4 @@
 
 ### Note
 
-- Alcuni parametri su applicazioni come LMstudio hanno nomi simili ad esempio max_new_token non è impostato di default e va abilitato limit respose
-lenght e con lo slider può essere settato in un range fino a 2048 token
+- Alcuni parametri su applicazioni come LMstudio hanno nomi simili ad esempio : max_new_token è Max Token ed è disabilitato. Va abilitato con limit respose lenght e successivamente con lo slider può essere settato fino a 2048 token
