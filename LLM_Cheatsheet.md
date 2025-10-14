@@ -1,4 +1,4 @@
-# LM Studio – Cheatsheet Parametri Generazione (in italiano)
+# LLM – Cheatsheet Parametri Generazione (in italiano)
 
 ## Parametri Principali
 
