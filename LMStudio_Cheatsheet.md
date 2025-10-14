@@ -1,8 +1,16 @@
 # LM Studio – Cheatsheet Parametri Generazione (in italiano)
 
-## Parametri principali
+## Parametri Principali
 
-### Context Length – Consigli pratici
+| Parametro | Significato | Valore consigliato |
+|------------|--------------|--------------------|
+| context length | Numero massimo di token di input che il modello ricorda | Usa il massimo reale supportato (8k–32k) |
+| evaluation batch size | Numero di prompt processati in parallelo durante l'inferenza | 1–4 per PC con 8–16 GB RAM, 8+ su GPU potente |
+| system prompt | Istruzioni permanenti (tono, ruolo, ecc.) | “Riscrivi il testo in italiano chiaro e coerente” |
+| stream output | Mostra l’output mentre viene generato | Attivalo per scrittura rapida, disattivalo per output completi |
+
+
+### Esempi Tipici di Context Lenght
 
 | Dimensione modello | Range tipico | Context “reale” consigliato | Note su memoria |
 |--------------------|---------------|-----------------------------|-----------------|
@@ -13,6 +21,8 @@
 | Modelli “300k+” dichiarati | 128k–300k+ | 64k–128k massimo reale | Spesso marketing: oltre 128k instabili |
 | Context troppo alto | — | Evitare 256k+ su PC | Aumenta i tempi, degrada la qualità |
 
+### Settaggi di output
+
 | Parametro | Significato | Valore consigliato | Note |
 |------------|--------------|--------------------|------|
 | max_new_tokens | Numero massimo di token generabili in output | 512 → risposte brevi<br>2048 → testi medi/lunghi<br>4096+ → riscritture o saggi | Se troppo basso tronca il testo |
@@ -22,13 +32,6 @@
 | presence_penalty | Evita di ripetere concetti già detti | 0.5–0.8 | Utile nei testi lunghi |
 | frequency_penalty | Penalizza parole ripetute troppo spesso | 0.5–1.0 | Migliora la varietà lessicale |
 
-## Parametri di contesto
-
-| Parametro | Significato | Valore consigliato |
-|------------|--------------|--------------------|
-| context length | Numero massimo di token di input che il modello ricorda | Usa il massimo reale supportato (8k–32k) |
-| system prompt | Istruzioni permanenti (tono, ruolo, ecc.) | “Riscrivi il testo in italiano chiaro e coerente” |
-| stream output | Mostra l’output mentre viene generato | Attivalo per scrittura rapida, disattivalo per output completi |
 
 ## Esempi rapidi
 
