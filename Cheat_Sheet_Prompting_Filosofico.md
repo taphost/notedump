@@ -95,6 +95,4 @@ Esempi di come ogni stile filosofico può guidare un LLM nella progettazione o s
 
 ---
 
-**Uso pratico:** ogni stile suggerisce un approccio mentale diverso — dall’indagine empirica al dubbio metodico — utile per diversificare la progettazione creativa.  
-
-**Sicurezza: 100/100**
+**Uso pratico:** ogni stile suggerisce un approccio mentale diverso — dall’indagine empirica al dubbio metodico — utile per diversificare la progettazione creativa.
