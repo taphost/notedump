@@ -1,4 +1,4 @@
-# Cheat Sheet Linguaggi di Programmazione
+# Cheat Sheet Tipologie Linguaggi di Programmazione
 
 | Categoria | Descrizione / Esempi |
 |------------|----------------------|
