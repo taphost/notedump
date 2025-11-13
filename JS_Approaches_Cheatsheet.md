@@ -1,4 +1,4 @@
-## JS Approaches — Ultimate Cheatsheet
+### JS Approaches — Ultimate Cheatsheet
 
 ---
 
