@@ -178,18 +178,6 @@ La crisi della specializzazione flessibile emerse negli anni 2000: globalizzazio
 **Descrizione:**
 Il Business Process Reengineering è un approccio manageriale radicale emerso all'inizio degli anni '90, formalizzato da Michael Hammer nell'articolo "Reengineering Work: Don't Automate, Obliterate" (Harvard Business Review, 1990) e nel libro "Reengineering the Corporation" (1993) scritto con James Champy. Il BPR propone il ripensamento fondamentale e la riprogettazione radicale dei processi aziendali per ottenere miglioramenti drastici (non incrementali) nelle performance critiche: costi, qualità, servizio e velocità.
 
-A differenza del miglioramento continuo (Kaizen), il BPR rifiuta l'approccio incrementale e propone una "tabula rasa": abbandonare completamente i processi esistenti e riprogettarli da zero partendo dalla domanda "se dovessimo ricominciare da capo, come organizzeremmo questo processo?". I principi fondamentali includono: organizzare attorno ai risultati finali anziché ai compiti, far eseguire il lavoro dove ha più senso (eliminare handoff inutili), integrare l'elaboriale. La specializzazione flessibile rimane un modello rilevante per settori ad alta intensità di conoscenza artigianale, moda, design e produzioni di nicchia, rappresentando un'alternativa sostenibile alla produzione di massa in contesti specifici.
-
----
-
-## 13. Business Process Reengineering (BPR)
-**Termine originale:** Business Process Reengineering  
-**Anno:** 1990-1993  
-**Autori:** Michael Hammer, James Champy
-
-**Descrizione:**
-Il Business Process Reengineering è un approccio manageriale radicale emerso all'inizio degli anni '90, formalizzato da Michael Hammer nell'articolo "Reengineering Work: Don't Automate, Obliterate" (Harvard Business Review, 1990) e nel libro "Reengineering the Corporation" (1993) scritto con James Champy. Il BPR propone il ripensamento fondamentale e la riprogettazione radicale dei processi aziendali per ottenere miglioramenti drastici (non incrementali) nelle performance critiche: costi, qualità, servizio e velocità.
-
 A differenza del miglioramento continuo (Kaizen), il BPR rifiuta l'approccio incrementale e propone una "tabula rasa": abbandonare completamente i processi esistenti e riprogettarli da zero partendo dalla domanda "se dovessimo ricominciare da capo, come organizzeremmo questo processo?". I principi fondamentali includono: organizzare attorno ai risultati finali anziché ai compiti, far eseguire il lavoro dove ha più senso (eliminare handoff inutili), integrare l'elaborazione delle informazioni nel lavoro che le produce, trattare risorse geograficamente distribuite come se fossero centralizzate, collegare attività parallele anziché integrare solo i risultati, posizionare il punto decisionale dove viene svolto il lavoro, e catturare le informazioni una sola volta alla fonte.
 
 Il BPR era fortemente legato alle tecnologie dell'informazione: i sistemi informatici permettevano di ripensare radicalmente processi prima vincolati da limiti tecnologici. Applicazioni tipiche includevano: integrazione di sistemi ERP (Enterprise Resource Planning), workflow management systems, customer relationship management, e-commerce e digitalizzazione documenti, e automazione processi amministrativi. I casi di successo riportavano risultati spettacolari: riduzione 70-90% dei tempi di ciclo, riduzione 40-70% dei costi, miglioramento qualità del 50-100%, e drastica riduzione degli errori.
