@@ -1,14 +1,3 @@
-## 1. Fondamenti
-
-### Segnali Tempo-Discreto
-Un **segnale tempo-discreto** x[n] è una sequenza di valori definita solo per valori interi di n. A differenza dei segnali continui, questi esistono solo in istanti discreti e sono la base del DSP.
-
-- **Energia**: E = Σ|x[n]|² somma su tutti i campioni. Un segnale ha energia finita se questa somma converge.
-- **Potenza**: P = lim(1/N)Σ|x[n]|² potenza media su un intervallo infinito. Utile per segnali periodici o aleatori che non hanno energia finita.
-
-**Segnali fondamentali**:
-- Impulso unitario δ[n]: vale 1 per n=0, zero altrove. È l'identità della convoluzione.
-- Gradino u# Cheatsheet DSP - Digital Signal Processing
 
 ## 1. Fondamenti
 
