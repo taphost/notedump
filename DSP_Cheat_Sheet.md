@@ -1,3 +1,5 @@
+# Cheatsheet DSP - Digital Signal Processing
+### Riferimento rapido su segnali, trasformate, filtri e multirate
 
 ## 1. Fondamenti
 
@@ -621,3 +623,7 @@ Algoritmi che aggiustano automaticamente i coefficienti del filtro per ottimizza
 | cos(ω₀n)u[n] | (1-cos(ω₀)z⁻¹)/(1-2cos(ω₀)z⁻¹+z⁻²) | \|z\| > 1 |
 | sin(ω₀n)u[n] | sin(ω₀)z⁻¹/(1-2cos(ω₀)z⁻¹+z⁻²) | \|z\| > 1 |
 
+## Note finali
+
+- Le formule assumono frequenza normalizzata in rad/campione e convenzione con fattore 2π; verifica sempre le definizioni di trasformata e di ordine dei filtri nei tool che usi (MATLAB/Python/Octave) perché fattori di scala e frequenze di taglio possono cambiare.
+- Controlla sempre la normalizzazione (frequenza in rad/campione vs Hz) e i segni delle esponenziali nelle librerie: DTFT/DFT/FFT possono differire per fattori 1/N o 2π e per la posizione dell’indice (k, n).
