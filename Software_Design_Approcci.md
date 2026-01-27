@@ -69,6 +69,15 @@ Elaborazione dati tramite sequenza di componenti (filters) connessi da pipes. Og
 ### **Master-Slave (Primary-Replica)**
 Pattern dove un nodo master coordina molteplici nodi slave. Master gestisce scritture, slave gestiscono letture. Replica dati per fault tolerance e load balancing. Comune in database distribuiti.
 
+### **Broker Pattern**
+Intermediario che coordina comunicazione tra componenti distribuiti. Disaccoppia client e server, gestisce marshalling/unmarshalling. Utilizzato in middleware, CORBA, sistemi distribuiti enterprise.
+
+### **Blackboard Pattern**
+Sistema dove specialisti multipli collaborano su spazio condiviso (blackboard). Nessun controllo centralizzato, componenti reagiscono a cambiamenti. Usato per problemi complessi senza strategia deterministica (AI, riconoscimento pattern).
+
+### **Interpreter Pattern (Architetturale)**
+Definisce rappresentazione grammatica per linguaggio specifico del dominio (DSL). Interprete processa ed esegue istruzioni. Usato in query languages, configuration languages, rule engines.
+
 ## Design Pattern (Gang of Four)
 
 ### **Creational Patterns**
@@ -134,6 +143,18 @@ Strategia di migrazione graduale da sistema legacy. Nuove funzionalità implemen
 ### **Service Mesh**
 Infrastruttura dedicata per comunicazione service-to-service. Gestisce discovery, load balancing, encryption, observability. Separazione tra logica business e comunicazione. Esempi: Istio, Linkerd.
 
+### **Sidecar Pattern**
+Container aggiuntivo che estende funzionalità container principale. Logging, monitoring, proxy, configuration. Deploy insieme all'applicazione. Separa cross-cutting concerns dalla business logic.
+
+### **Ambassador Pattern**
+Proxy che gestisce connessioni di rete per conto del servizio. Offload di retry logic, circuit breaking, logging. Semplifica client, centralizza logica di connessione.
+
+### **Retry Pattern**
+Gestisce fallimenti transienti riprovando operazione. Configura numero tentativi, backoff strategy (exponential, linear). Migliora resilienza in reti inaffidabili.
+
+### **Bulkhead Pattern**
+Isola risorse per prevenire cascading failures. Separa connection pools, thread pools per servizi diversi. Se un servizio fallisce, altri continuano. Migliora fault tolerance.
+
 ## Principi di Design
 
 ### **SOLID Principles**
@@ -182,6 +203,39 @@ Combina batch processing e real-time streaming. Batch layer (accuratezza), speed
 Semplificazione di Lambda, solo stream processing. Tutti i dati come stream. Riprocessing tramite replay. Più semplice da mantenere rispetto a Lambda.
 
 ## Metodologie di Sviluppo
+
+### **Waterfall**
+Metodologia sequenziale lineare. Fasi: Requirements → Design → Implementation → Testing → Deployment → Maintenance. Ogni fase completata prima della successiva. Adatto per progetti con requisiti stabili e ben definiti.
+
+### **Agile**
+Filosofia iterativa e incrementale. Sviluppo in cicli brevi (sprint), feedback continuo, adattamento al cambiamento. Valori: individui e interazioni, software funzionante, collaborazione col cliente, risposta al cambiamento.
+
+### **Scrum**
+Framework Agile con ruoli definiti: Product Owner, Scrum Master, Development Team. Sprint di 1-4 settimane, Daily Standup, Sprint Planning, Review, Retrospective. Backlog prioritizzato, incrementi potenzialmente rilasciabili.
+
+### **Kanban**
+Visualizza flusso di lavoro su board (To Do, In Progress, Done). WIP (Work In Progress) limits per evitare sovraccarico. Flusso continuo, pull system. Focus su efficienza e riduzione bottleneck.
+
+### **Extreme Programming (XP)**
+Pratiche tecniche per qualità: pair programming, TDD, continuous integration, refactoring continuo, simple design, collective code ownership. Rilasci frequenti, piccoli incrementi.
+
+### **Lean Software Development**
+Principi dal Lean Manufacturing. Elimina sprechi, amplifica apprendimento, decide il più tardi possibile, consegna veloce, empowerment team, build quality in, ottimizza il tutto.
+
+### **SAFe (Scaled Agile Framework)**
+Framework per applicare Agile a grandi organizzazioni. Livelli: Team, Program, Large Solution, Portfolio. Coordina team multipli, allineamento strategico, rilasci sincronizzati (Program Increment).
+
+### **Feature-Driven Development (FDD)**
+Sviluppo guidato da feature business-oriented. Fasi: sviluppa modello, build feature list, plan by feature, design by feature, build by feature. Iterazioni brevi (1-2 settimane), feature come unità di lavoro.
+
+### **Crystal**
+Famiglia di metodologie Agile (Clear, Yellow, Orange, Red) basate su dimensione team e criticità progetto. Enfasi su comunicazione, collaborazione, riflessione. Leggero, adattabile.
+
+### **DSDM (Dynamic Systems Development Method)**
+Framework Agile timeboxed. Principi: focus su business need, consegna in tempo, collaborazione, mai compromettere qualità, incrementale, reversibilità, requisiti high-level. MoSCoW prioritization.
+
+### **Rational Unified Process (RUP)**
+Processo iterativo risk-driven. Fasi: Inception, Elaboration, Construction, Transition. Discipline parallele (requirements, analysis, design, implementation, test). Use-case driven, architecture-centric.
 
 ### **Test-Driven Development (TDD)**
 Ciclo Red-Green-Refactor. Scrivi test prima del codice. Test fallisce (Red), implementi codice minimo (Green), refactor. Migliora design, aumenta coverage, documenta comportamento.
