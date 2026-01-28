@@ -84,138 +84,266 @@ Gateway (control plane locale)
 
 ---
 
-## 🔄 Differenze con Altri Agenti
+## 🔄 Moltbot vs Altri Agenti - Confronto Unificato
 
-### vs Devin (Cognition AI)
-| Caratteristica | Moltbot | Devin |
-|----------------|---------|-------|
-| Architettura | Gateway locale + LLM remoto | 100% cloud, VPC enterprise |
-| Deployment | Self-hosted | SaaS commerciale |
-| Control plane | Locale (verificabile) | Server remoto proprietario |
-| Focus | Multi-channel personal assistant | Software engineering autonomo |
-| Autonomia | Event-driven proattiva | Autonoma 4-8h task |
-| Pricing | Free (MIT) + costi API | $500/mese (era), $20/mese (Devin 2.0) |
-| Target | Power user tecnici | Enterprise teams |
-| Trust model | Local-first, server-dependent | Full cloud trust-based |
+### Tabella Comparativa Completa
 
-**Nota Devin**: Goldman Sachs lo usa come "employee #1". ARR $73M (giugno 2025), valutazione $2B. Acquisito Windsurf (luglio 2025).
+| Caratteristica | **Moltbot** | Devin | Replit Agent 3 | Open Interpreter | Windsurf | Cline | Aider | Bolt.new | v0 | Cursor | ChatGPT |
+|----------------|-------------|-------|----------------|------------------|----------|-------|-------|----------|-----|--------|---------|
+| **Architettura** | Gateway locale + LLM remoto | 100% cloud VPC | Cloud sandbox | CLI + LLM | IDE locale + backend | Client + server | CLI + LLM | Browser cloud | Cloud SaaS | Cloud IDE | Cloud SaaS |
+| **Deployment** | Self-hosted daemon | SaaS | Cloud hosted | Local on-demand | Standalone IDE | VS Code ext | CLI tool | Browser | Web app | Desktop app | Web/app |
+| **Focus** | Multi-channel automation 24/7 | Software eng autonomo | Full-stack builder | Local code execution | Flow-state coding | IDE/repo work | Git pair programming | Instant web deploy | UI generation only | Code assist | Conversational |
+| **Autonomia** | Alta (event-driven 24/7) | Altissima (4-8h task) | Alta (200min max) | Media (approval) | Alta (IDE scope) | Media (approval) | Media (approval) | Media (task-based) | Zero (passive tool) | Bassa (suggestions) | Zero (reactive) |
+| **Proattività** | Sì (push) | Sì (autonomous) | Sì (self-test) | No (pull) | Parziale (auto-lint) | No (pull) | No (pull) | No (pull) | No | No | No |
+| **Control plane** | Locale verificabile | Remoto closed | Remoto closed | Locale | Ibrido | Remoto closed | Locale | Remoto | Remoto | Remoto | Remoto |
+| **Setup** | Medio (30-60min) | Immediato | Immediato | Facile (10min) | Facile | Facile | Facile | Immediato | Immediato | Immediato | Immediato |
+| **Guardrail** | Quasi zero | Medio | Auto-test | Approval-based | Auto-lint | Approval-based | Approval-based | Bassi | N/A | Suggestion | Alti |
+| **Pricing** | Free + $10-150/m API | $20-500/m | $20/m + credits | Free + API | $0-15/m credits | Free + API | Free + API | Free → $20/m | 200cr/m → $20/m | $20/m | $0-20/m |
+| **Target** | Power user tecnici | Enterprise teams | No-code + devs | Developers | Professional devs | Developers | Git-power users | Rapid prototyping | Designers/PM | Developers | Everyone |
+| **Server trust** | LLM + OAuth + canali | Full cloud | Full cloud | LLM only | Backend + LLM | Backend + LLM | LLM only | Full cloud | Full cloud | Cloud IDE | Full cloud |
 
-### vs Open Interpreter
-| Caratteristica | Moltbot | Open Interpreter |
-|----------------|---------|------------------|
-| Architettura | Gateway + canali multipli | Terminal-focused, singolo |
-| Deployment | Daemon always-on | CLI on-demand |
-| Focus | Multi-channel automation | Local code execution |
-| Canali | WhatsApp, Telegram, Slack, etc. | Solo terminal/Python API |
-| Proattività | Nativa (push) | Reattiva (pull) |
-| Guardrail | Quasi zero | User approval per comando |
-| Use case | Personal assistant 24/7 | Task-based automation |
-| LLM Support | Claude, GPT, custom | Tutti (LiteLLM) + modelli locali (Ollama) |
+---
 
-**Nota Open Interpreter**: 50K+ stelle GitHub, progetto "Linux of AI". Supporta GUI control + vision. Più sicuro di Moltbot per design (approval-based).
+## 📝 Note Specifiche per Agente
 
-### vs Replit Agent 3
-| Caratteristica | Moltbot | Replit Agent 3 |
-|----------------|---------|----------------|
-| Architettura | Self-hosted locale | Cloud-based (Replit infra) |
-| Ambiente | Sistema host completo | Sandbox cloud isolato |
-| Focus | Multi-channel assistant | App/automation builder |
-| Autonomia | Event-driven continua | Task-based (200 min max) |
-| Testing | Manuale/esterno | Self-testing integrato (3x faster) |
-| Deploy | User-managed | Instant (Replit hosting) |
-| Agent spawning | No | Sì (genera altri agent) |
-| Pricing | Free + API costs | $20/mese + crediti |
-| Target | Sysadmin/power user | No-code builders, PM |
+### Devin (Cognition AI)
+**Posizionamento**: Enterprise autonomous software engineer, massima autonomia commerciale.
 
-**Nota Replit**: $3B valuation, $250M round (2025). Agent 3 = 10x più autonomo di v2. Integrazione ChatGPT, Figma import, web search nativo.
+**Metriche chiave**:
+- ARR: $73M (giugno 2025)
+- Valutazione: $2B
+- Clienti: Goldman Sachs ("employee #1"), 67% PR merge rate
+- Acquisizioni: Windsurf (luglio 2025)
 
-### vs Cline
-| Caratteristica | Moltbot | Cline |
-|----------------|---------|-------|
-| Architettura | Gateway locale + LLM remoto | Client thin + server backend |
-| Control plane | Locale (verificabile) | Server remoto (closed) |
-| Focus | Multi-channel personal assistant | Coding agent (editor-native) |
-| Autonomia | Proattiva (event-driven) | Reattiva (approval-based) |
-| Trust issue | Server LLM + OAuth | Backend Cline proprietario |
+**Punti di forza**:
+- Task autonomi 4-8h senza intervento
+- VPC enterprise dedicato
+- Self-debugging e testing integrato
+- Junior engineer level reale
 
-### vs Cursor/GitHub Copilot
-| Caratteristica | Moltbot | Cursor/Copilot |
-|----------------|---------|----------------|
-| Tipo | Agent autonomo | Coding assistant |
-| Deployment | Self-hosted | Cloud IDE |
-| Azioni | Sistema completo | Solo codice/IDE |
-| Autonomia | Alta (ore senza input) | Bassa (suggerimenti) |
-| Focus | General purpose | Software development |
+**Limiti**:
+- Costo elevato ($500→$20/mese dopo pricing change)
+- Zero controllo locale (full cloud trust)
+- Non sostituisce senior engineer (ambiguità/design)
 
-### vs Windsurf (ex-Codeium)
-| Caratteristica | Moltbot | Windsurf |
-|----------------|---------|----------|
-| Tipo | Personal agent daemon | Agentic IDE standalone |
-| Architettura | Gateway locale + canali | IDE completo (VS Code fork) |
-| Focus | Multi-channel automation | Flow state coding |
-| Feature chiave | Proattività 24/7 | Cascade AI (codebase awareness) |
-| Acquisition | N/A | Acquisito da Cognition (Devin) luglio 2025 |
-| Pricing | Free + API | Freemium: $0-15/m (credits) |
-| ARR | N/A | $82M (luglio 2025) |
-| Utenti | ~50K (stima) | 800K+ developers |
+**Differenza chiave vs Moltbot**: Enterprise cloud vs personal self-hosted. Devin = employee, Moltbot = personal assistant.
 
-**Nota Windsurf**: Rebranding da Codeium fine 2024. Leader Gartner Magic Quadrant 2025. Cascade agent = "mind-meld" con developer, auto-lint fix, MCP integration.
+---
 
-### vs Aider
-| Caratteristica | Moltbot | Aider |
-|----------------|---------|-------|
-| Tipo | Personal agent | CLI pair programming |
-| Interface | Multi-channel (chat apps) | Terminal-only |
-| Deployment | Daemon always-on | On-demand CLI |
-| Proattività | Push (event-driven) | Pull (user invoked) |
-| Git integration | Basic | Native (auto-commit) |
-| Context | Multi-task persistent | Per-repo session |
-| Voice | Sì (Apple wake) | Sì (speech-to-code) |
-| IDE integration | Esterno | Watch mode + plugins |
-| Pricing | Free + API | Free (open-source) + API |
-| Best for | 24/7 automation | Git-centric workflows |
+### Replit Agent 3
+**Posizionamento**: Cloud IDE builder con autonomia estesa, no-code friendly.
 
-**Nota Aider**: 20K+ GitHub stars, considerato "surgical" per edit precisi. Supporto Ollama locale. Comunità considera più datato vs Claude Code/Gemini CLI (2025).
+**Metriche chiave**:
+- Valutazione: $3B, round $250M (2025)
+- Milestone: 1M+ websites create
+- Autonomia: 200 minuti max per task
 
-### vs Bolt.new (StackBlitz)
-| Caratteristica | Moltbot | Bolt.new |
-|----------------|---------|----------|
-| Tipo | Personal agent | Full-stack web builder |
-| Deployment | Self-hosted daemon | Browser SaaS |
-| Focus | General automation | Instant app deploy |
-| Runtime | Node.js locale | WebContainers (browser) |
-| Target user | Developers tecnici | No-code + developers |
-| Setup time | 30-60 min | 0 (instant) |
-| Pricing | Free + API | Freemium: 150K tokens/day → $20/m |
-| Milestone | 50K installs | 1M+ websites (5 mesi, 2025) |
-| Strength | Proattività sistema | Prototipazione veloce |
-| Weakness | Complessità setup | Token-based limits |
+**Feature uniche**:
+- **Agent spawning**: genera altri agent automaticamente
+- **Self-testing**: 3x più veloce di v2
+- Integrazione ChatGPT, Figma import, web search nativo
 
-**Nota Bolt.new**: Acquisizione da 0 a profittabilità/milioni ARR in <1 anno. Browser-native (WebContainers), deploy Netlify/Vercel one-click. Open-source (bolt.diy multi-LLM).
+**Punti di forza**:
+- Instant deploy (Replit hosting)
+- Sandbox cloud isolato (più sicuro)
+- No-code accessible
 
-### vs v0 (Vercel)
-| Caratteristica | Moltbot | v0 |
-|----------------|---------|-----|
-| Tipo | Personal agent | UI generator |
-| Focus | Multi-task automation | React/Next.js UI only |
-| Output | Azioni sistema | Codice componenti |
-| Stack | Agnostic | React + Tailwind + shadcn/ui |
-| Autonomia | Alta (giorni) | Zero (tool passivo) |
-| Backend | Sì (bash, tools) | No (solo frontend) |
-| Deploy | User-managed | Vercel native |
-| Pricing | Free + API | 200 credits/m → $20/m |
-| Best for | Automazione complessa | UI scaffolding rapido |
+**Limiti**:
+- Token/credit limits
+- Dipendenza infrastruttura Replit
+- Autonomia limitata a 200min (vs Moltbot 24/7)
 
-**Nota v0**: Specializzato text-to-UI, NON full-stack. Platform API disponibile (beta). 100K+ waitlist in 3 settimane (lancio 2023). Focus: "generative UI" per designer/PM.
+**Differenza chiave vs Moltbot**: Cloud sandbox vs system access. Task-based vs always-on.
 
-### vs ChatGPT/Claude standard
-| Caratteristica | Moltbot | ChatGPT/Claude |
-|----------------|---------|----------------|
-| Tipo | Agent autonomo | Chatbot reattivo |
-| Azioni | Esegue comandi sistema | Solo testo/informazioni |
-| Memoria | Persistente cross-platform | Sessione/limitata |
-| Deployment | Self-hosted | Cloud SaaS |
-| Proattività | Push (notifiche) | Pull (solo risponde) |
+---
+
+### Open Interpreter
+**Posizionamento**: CLI local execution, massima trasparenza e privacy possibile.
+
+**Metriche chiave**:
+- GitHub: 50K+ stelle
+- Community: "Linux of AI"
+
+**Feature uniche**:
+- **Vero air-gapped possibile** (Ollama locale)
+- Approval manuale per ogni comando
+- GUI control + vision support
+
+**Punti di forza**:
+- Massima privacy (100% locale con Ollama)
+- Transparent execution
+- Safety by design (approval-based)
+
+**Limiti**:
+- On-demand (non proattivo)
+- Terminal-only (no multi-channel)
+- Ogni comando richiede conferma
+
+**Differenza chiave vs Moltbot**: Pull vs push, on-demand vs daemon. Filosofia simile (local-first) ma execution opposta.
+
+---
+
+### Windsurf (Codeium)
+**Posizionamento**: IDE standalone per flow-state coding, acquisito da Devin creators.
+
+**Metriche chiave**:
+- ARR: $82M (luglio 2025)
+- Utenti: 800K+ developers
+- Acquisito da: Cognition (Devin creators)
+- Gartner: Leader Magic Quadrant 2025
+
+**Feature uniche**:
+- **Cascade AI**: codebase awareness "mind-meld"
+- Auto-lint fix integrato
+- MCP integration
+- VS Code fork completo
+
+**Punti di forza**:
+- Flow state ottimizzato
+- IDE-native (no setup esterno)
+- Professional developer focus
+
+**Limiti**:
+- IDE-bound (non system-wide)
+- Backend Codeium closed
+- Solo coding (no general automation)
+
+**Differenza chiave vs Moltbot**: IDE-scope vs system-wide. Coding-only vs multi-task. Sempre attivo nell'IDE vs sempre attivo nel sistema.
+
+---
+
+### Cline
+**Posizionamento**: VS Code extension, approval-based coding agent.
+
+**Architettura problematica**:
+- Client open-source
+- **Server backend proprietario** (closed)
+- Trust model: "client open + server closed = sistema closed"
+
+**Punti di forza**:
+- VS Code integration nativa
+- Approval-based safety
+- Facile setup
+
+**Limiti**:
+- Server centrale decide (non verificabile)
+- Reattivo (non proattivo)
+- Coding-only
+
+**Differenza chiave vs Moltbot**: Server centrale decisionale vs gateway locale. Moltbot ha control plane locale verificabile.
+
+---
+
+### Aider
+**Posizionamento**: CLI pair programming, Git-native, terminal power users.
+
+**Metriche chiave**:
+- GitHub: 20K+ stelle
+- Reputazione: "Surgical" per edit precisi
+
+**Feature uniche**:
+- **Git-native**: auto-commit ogni modifica
+- Voice support (speech-to-code)
+- Watch mode + IDE plugins
+
+**Punti di forza**:
+- Git-centric workflows ottimali
+- Precision editing
+- Supporto Ollama (locale)
+
+**Limiti**:
+- Considerato "datato" vs Claude Code/Gemini CLI (2025)
+- Terminal-only
+- On-demand (non daemon)
+
+**Differenza chiave vs Moltbot**: Git-focused vs multi-channel. On-demand CLI vs always-on daemon.
+
+---
+
+### Bolt.new (StackBlitz)
+**Posizionamento**: Browser-based instant full-stack deploy, prototipazione velocissima.
+
+**Metriche chiave**:
+- Milestone: 0→profittabilità in <1 anno
+- Websites: 1M+ in 5 mesi
+- WebContainers: browser-native runtime
+
+**Feature uniche**:
+- **Zero setup**: tutto nel browser
+- Deploy one-click (Netlify/Vercel)
+- Open-source fork: bolt.diy (multi-LLM)
+
+**Punti di forza**:
+- Velocità prototipazione estrema
+- 6h per e-commerce completo (case study)
+- Accessibile a non-developers
+
+**Limiti**:
+- Token-based limits (freemium)
+- Browser-dependent
+- No system access
+
+**Differenza chiave vs Moltbot**: Web-only vs system-wide. Prototyping tool vs automation daemon. Task-based vs 24/7.
+
+---
+
+### v0 (Vercel)
+**Posizionamento**: Text-to-UI specializzato, React/Next.js only, designer-focused.
+
+**Metriche chiave**:
+- Waitlist: 100K+ in 3 settimane (lancio 2023)
+- Platform API: disponibile (beta 2025)
+
+**Feature uniche**:
+- Specializzazione: **solo UI/frontend**
+- Stack fisso: React + Tailwind + shadcn/ui
+- "Generative UI" paradigm
+
+**Punti di forza**:
+- UI scaffolding velocissimo
+- Designer/PM accessible
+- Vercel integration nativa
+
+**Limiti**:
+- **NON full-stack** (solo frontend)
+- Stack rigido (no flexibility)
+- Zero autonomia (tool passivo)
+
+**Differenza chiave vs Moltbot**: UI generation tool vs automation agent. Passive vs proactive. Frontend-only vs full system.
+
+---
+
+### Cursor
+**Posizionamento**: IDE augmented, coding assistant (NON vero agent).
+
+**Tipo**: Suggestion-based, non autonomous
+
+**Punti di forza**:
+- Facile, immediato
+- Safe (solo suggestions)
+- Developer-friendly
+
+**Limiti**:
+- Bassa autonomia
+- No proattività
+- Requires constant input
+
+**Differenza chiave vs Moltbot**: Assistant vs agent. Suggestions vs actions. Reactive vs proactive.
+
+---
+
+### ChatGPT/Claude
+**Posizionamento**: Baseline chatbot, riferimento conversazionale.
+
+**Tipo**: Chatbot reattivo, zero autonomia
+
+**Differenza fondamentale con TUTTI gli agent**:
+- Stateless vs stateful
+- Pull vs push
+- Zero azioni vs system access
+- Conversational only vs multi-modal execution
+
+**Formula**: Chatbot = "dimmi cosa fare", Agent = "ho fatto X perché Y è cambiato".
 
 ---
 
@@ -693,4 +821,4 @@ Stesso vale per Moltbot: **amplifica**, non sostituisce competenze tecniche.
 ---
 
 **Ultima revisione**: Gennaio 2026  
-**Versione**: 3.0 (confronto esteso: Codex, Windsurf, Aider, Bolt.new, v0, agenti storici, specializzati UI/deploy, ecosystem completo 15+ tools)
+**Versione**: 4.0 (confronto unificato: tabella comparativa unica + note specifiche per agente, consistenza descrizioni Moltbot)
