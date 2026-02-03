@@ -187,7 +187,7 @@ flowchart LR
 ## 11. Checklist: come iniziare
 
 - [ ] Prototipa con gli sviluppatori, valuta i framework (LangGraph, CrewAI, MetaGPT, ecc.)
-- [ ] Mappa gli **events** tra i dominii in cui gli agenti possono ascoltare e agire
+- [ ] Mappa gli **events** tra i domini in cui gli agenti possono ascoltare e agire
 - [ ] Pilota **multi-agent workflows** per scenari business-critical
 - [ ] Definisci policy per **trust, safety, governance**
 - [ ] Misura l'impatto in **business value**, non solo accuracy/uptime
