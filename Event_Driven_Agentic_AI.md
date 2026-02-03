@@ -138,8 +138,8 @@ flowchart LR
 ```mermaid
 flowchart TD
     RT[Real-Time Data] --> T1[🔥 Trigger workflows]
-    RT --> T2[📚 Enrich decision-making\nPopola vector DB per RAG]
-    RT --> T3[⚡ Accelerate action\nContesto aggiornato per risposte rapide]
+    RT --> T2[📚 Enrich decision-making\n Popola vector DB per RAG]
+    RT --> T3[⚡ Accelerate action\n Contesto aggiornato per risposte rapide]
 ```
 
 ---
