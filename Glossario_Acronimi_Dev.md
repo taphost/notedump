@@ -124,6 +124,7 @@
 | **Warning** | Avviso | Segnalazione problema potenziale |
 | **Bug** | Bug | Difetto software causa comportamento errato |
 | **Debug** | Debug | Processo identificazione correzione bug |
+| **Rubber Duck Debugging** | Rubber Duck Debugging | Debug Papera Gomma | Tecnica debug spiegando codice ad oggetto inanimato |
 | **Breakpoint** | Punto Interruzione | Punto pausa esecuzione per debug |
 | **Stack Trace** | Traccia Stack | Sequenza chiamate funzioni a errore |
 | **Logging** | Registrazione | Salvataggio eventi sistema per analisi |
@@ -156,6 +157,11 @@
 | **Profiling** | Profilazione | Analisi prestazioni runtime |
 | **Bit** | Bit | Unità minima informazione binaria |
 | **Byte** | Byte | 8 bit, unità base dati |
+| **KB** | Kilobyte | Kilobyte | 1024 byte |
+| **MB** | Megabyte | Megabyte | 1024 KB, circa 1 milione byte |
+| **GB** | Gigabyte | Gigabyte | 1024 MB, circa 1 miliardo byte |
+| **TB** | Terabyte | Terabyte | 1024 GB, circa 1000 miliardi byte |
+| **PB** | Petabyte | Petabyte | 1024 TB |
 | **Word** | Word/Parola | Unità dati elaborata CPU (16/32/64 bit) |
 | **Register** | Registro | Memoria veloce interno CPU |
 | **Instruction Set** | Set Istruzioni | Insieme comandi supportati CPU |
@@ -270,6 +276,34 @@
 | **NVM** | Node Version Manager | Gestore Versioni Node | Tool per gestire versioni Node.js |
 | **Yarn** | Yarn | Yarn | Gestore pacchetti alternativo a NPM |
 | **Regex** | Regular Expression | Espressione Regolare | Pattern per ricerca/manipolazione testo |
+| **Linter** | Linter | Linter | Tool analisi statica codice per errori/stile |
+| **Formatter** | Formatter | Formattatore | Tool formattazione automatica codice |
+| **Parser** | Parser | Parser/Analizzatore | Analizza struttura codice sorgente |
+| **Lexer** | Lexer | Analizzatore Lessicale | Converte codice in token |
+| **AST** | Abstract Syntax Tree | Albero Sintattico Astratto | Rappresentazione gerarchica struttura codice |
+| **Preprocessor** | Preprocessor | Preprocessore | Elabora codice prima compilazione |
+| **Boilerplate** | Boilerplate | Codice Template | Codice ripetitivo standard iniziale |
+| **Scaffolding** | Scaffolding | Scaffolding | Generazione automatica struttura progetto |
+| **Framework** | Framework | Framework | Struttura software riutilizzabile per applicazioni |
+| **Package** | Package | Pacchetto | Unità distribuzione codice con dipendenze |
+| **Module** | Module | Modulo | Unità codice riutilizzabile isolato |
+| **Bundle** | Bundle | Bundle | File compilato contenente più moduli |
+| **Artifact** | Artifact | Artefatto | Output processo build (eseguibile, libreria) |
+| **Monorepo** | Monorepo | Monorepo | Repository singolo contenente multipli progetti |
+| **Workspace** | Workspace | Workspace | Ambiente lavoro organizzato multipli progetti |
+| **Hot Reload** | Hot Reload | Ricaricamento a Caldo | Aggiornamento codice runtime senza riavvio |
+| **Live Reload** | Live Reload | Ricaricamento Live | Ricarica automatica browser a modifica file |
+| **Source Map** | Source Map | Mappa Sorgente | File mappatura codice transpilato a originale |
+| **Code Coverage** | Code Coverage | Copertura Codice | Percentuale codice eseguito da test |
+| **Static Analysis** | Static Analysis | Analisi Statica | Analisi codice senza esecuzione |
+| **Linting** | Linting | Linting | Processo analisi codice con linter |
+| **Snippet** | Snippet | Snippet/Frammento | Piccolo frammento codice riutilizzabile |
+| **Stub** | Stub | Stub | Implementazione fittizia minima per test |
+| **Mock** | Mock | Mock | Oggetto simulato per test isolati |
+| **Shim** | Shim | Shim | Layer compatibilità tra componenti |
+| **Patch** | Patch | Patch | File modifiche/correzioni codice |
+| **Changelog** | Changelog | Registro Modifiche | Documento modifiche tra versioni |
+| **Breaking Change** | Breaking Change | Modifica Incompatibile | Modifica rompe compatibilità versioni precedenti |
 
 
 ## 🏗️ Architettura
@@ -687,6 +721,6 @@
 
 ---
 
-**Totale acronimi: ~323 | Termini: ~174 | TOTALE: ~497**
+**Totale acronimi: ~328 | Termini: ~203 | TOTALE: ~531**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
