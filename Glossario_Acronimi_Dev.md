@@ -125,6 +125,8 @@
 | **Bug** | Bug | Difetto software causa comportamento errato |
 | **Debug** | Debug | Processo identificazione correzione bug |
 | **Rubber Duck Debugging** | Rubber Duck Debugging | Debug Papera Gomma | Tecnica debug spiegando codice ad oggetto inanimato |
+| **Program Slicing** | Program Slicing | Slicing Programma | Estrazione subset codice rilevante per comportamento specifico |
+| **Delta Debugging** | Delta Debugging | Debug Delta | Minimizzazione automatica input causante fallimento |
 | **Breakpoint** | Punto Interruzione | Punto pausa esecuzione per debug |
 | **Stack Trace** | Traccia Stack | Sequenza chiamate funzioni a errore |
 | **Logging** | Registrazione | Salvataggio eventi sistema per analisi |
@@ -418,6 +420,7 @@
 | **BLOB** | Binary Large Object | Oggetto Binario Grande | Tipo dato per file binari in DB |
 | **IOPS** | Input/Output Operations Per Second | Operazioni Input/Output al Secondo | Metrica prestazioni storage |
 | **RAID** | Redundant Array of Independent Disks | Array Ridondante Dischi Indipendenti | Tecnologia affidabilità storage |
+| **CRDT** | Conflict-free Replicated Data Type | Tipo Dati Replicato Senza Conflitti | Struttura dati sincronizzazione distribuita senza conflitti |
 
 
 ## 🌍 Networking & Protocolli
@@ -721,6 +724,6 @@
 
 ---
 
-**Totale acronimi: ~328 | Termini: ~203 | TOTALE: ~531**
+**Totale acronimi: ~329 | Termini: ~205 | TOTALE: ~534**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
