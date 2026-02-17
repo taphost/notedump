@@ -39,6 +39,174 @@
 | **RAD** | Rapid Application Development | Sviluppo Rapido Applicazioni | Metodologia sviluppo veloce iterativo |
 
 
+## 📚 Concetti & Terminologia Fondamentale
+
+| Termine | Traduzione | Spiegazione |
+|---------|------------|-------------|
+| **Asynchronous** | Asincrono | Esecuzione non bloccante, operazioni parallele |
+| **Synchronous** | Sincrono | Esecuzione sequenziale bloccante |
+| **Race Condition** | Condizione di Gara | Comportamento imprevedibile per accesso concorrente |
+| **Deadlock** | Stallo | Blocco reciproco tra processi in attesa |
+| **Thread** | Thread/Filo Esecuzione | Unità esecuzione indipendente in processo |
+| **Mutex** | Mutual Exclusion | Meccanismo esclusione mutua per risorse |
+| **Semaphore** | Semaforo | Variabile controllo accesso concorrente |
+| **Blocking** | Bloccante | Operazione che attende completamento |
+| **Non-blocking** | Non Bloccante | Operazione che ritorna immediatamente |
+| **Callback** | Richiamata | Funzione passata come argomento |
+| **Promise** | Promessa | Oggetto rappresenta operazione asincrona futura |
+| **Async/Await** | Async/Await | Sintassi gestione codice asincrono |
+| **Concurrency** | Concorrenza | Gestione multipli task sovrapposti |
+| **Parallelism** | Parallelismo | Esecuzione simultanea su più core |
+| **Lock** | Blocco | Meccanismo sincronizzazione accesso risorsa |
+| **Atomic Operation** | Operazione Atomica | Operazione indivisibile non interrompibile |
+| **Critical Section** | Sezione Critica | Codice con accesso risorsa condivisa |
+| **Starvation** | Inedia | Processo mai ottiene risorse necessarie |
+| **Livelock** | Stallo Attivo | Processi cambiano stato senza progredire |
+| **Modularity** | Modularità | Suddivisione sistema in componenti indipendenti |
+| **Coupling** | Accoppiamento | Grado dipendenza tra moduli |
+| **Cohesion** | Coesione | Grado relazione interna modulo |
+| **Abstraction** | Astrazione | Nascondere complessità mostrando essenziale |
+| **Encapsulation** | Incapsulamento | Nascondere implementazione interna |
+| **Inheritance** | Ereditarietà | Classe eredita proprietà da altra |
+| **Polymorphism** | Polimorfismo | Oggetti diversi rispondono stessa interfaccia |
+| **Composition** | Composizione | Costruire oggetti complessi da semplici |
+| **Clean Code** | Codice Pulito | Codice leggibile, manutenibile, comprensibile |
+| **Code Smell** | Cattivo Odore Codice | Indicatore potenziali problemi design |
+| **Technical Debt** | Debito Tecnico | Costo futuro scelte subottimali |
+| **Refactoring** | Ristrutturazione | Migliorare struttura senza cambiare comportamento |
+| **Idempotent** | Idempotente | Operazione con stesso risultato ripetuta |
+| **Side Effect** | Effetto Collaterale | Modifica stato esterno a funzione |
+| **Pure Function** | Funzione Pura | Funzione senza effetti collaterali |
+| **Immutable** | Immutabile | Dato non modificabile dopo creazione |
+| **Bottleneck** | Collo di Bottiglia | Punto limitazione prestazioni sistema |
+| **Latency** | Latenza | Ritardo tempo risposta |
+| **Throughput** | Throughput | Quantità lavoro per unità tempo |
+| **Scalability** | Scalabilità | Capacità gestire carico crescente |
+| **Cache** | Cache | Memoria temporanea dati accesso veloce |
+| **Memoization** | Memoizzazione | Caching risultati funzione |
+| **Memory Leak** | Perdita Memoria | Memoria allocata non rilasciata |
+| **Garbage Collection** | Raccolta Rifiuti | Liberazione automatica memoria inutilizzata |
+| **Stack** | Stack/Pila | Struttura dati LIFO |
+| **Heap** | Heap/Mucchio | Area memoria dinamica |
+| **Pointer** | Puntatore | Variabile contiene indirizzo memoria |
+| **Reference** | Riferimento | Alias oggetto esistente |
+| **Shallow Copy** | Copia Superficiale | Copia riferimenti non oggetti |
+| **Deep Copy** | Copia Profonda | Copia completa ricorsiva oggetti |
+| **Serialization** | Serializzazione | Conversione oggetto in formato trasmissibile |
+| **Deserialization** | Deserializzazione | Ricostruzione oggetto da formato serializzato |
+| **Marshalling** | Marshalling | Preparazione dati per trasmissione |
+| **Hashing** | Hashing | Trasformazione dato in valore fisso |
+| **Collision** | Collisione | Due input producono stesso hash |
+| **Index** | Indice | Struttura accelerare ricerca database |
+| **Pagination** | Impaginazione | Suddivisione dati in pagine |
+| **Normalization** | Normalizzazione | Organizzare dati ridurre ridondanza |
+| **Denormalization** | Denormalizzazione | Aggiungere ridondanza per performance |
+| **Endpoint** | Endpoint | URL specifico servizio API |
+| **Payload** | Carico Utile | Dati effettivi trasmessi |
+| **Request** | Richiesta | Domanda client a server |
+| **Response** | Risposta | Risposta server a client |
+| **Timeout** | Timeout | Scadenza tempo attesa |
+| **Retry** | Riprova | Nuovo tentativo operazione fallita |
+| **Handshake** | Stretta di Mano | Negoziazione iniziale connessione |
+| **Protocol** | Protocollo | Regole comunicazione tra sistemi |
+| **Port** | Porta | Numero identificativo servizio rete |
+| **Encryption** | Crittografia | Trasformazione dati in formato illeggibile |
+| **Decryption** | Decrittografia | Riconversione dati criptati |
+| **Hash** | Hash | Valore fisso da funzione hash |
+| **Salt** | Sale | Dati casuali aggiunti prima hashing |
+| **Token** | Gettone | Stringa identificazione/autorizzazione |
+| **Authentication** | Autenticazione | Verifica identità utente |
+| **Authorization** | Autorizzazione | Verifica permessi accesso |
+| **Session** | Sessione | Periodo interazione utente-sistema |
+| **Cookie** | Cookie | Piccolo file dati salvato browser |
+| **Exception** | Eccezione | Evento anomalo durante esecuzione |
+| **Error** | Errore | Problema impedisce esecuzione corretta |
+| **Warning** | Avviso | Segnalazione problema potenziale |
+| **Bug** | Bug | Difetto software causa comportamento errato |
+| **Debug** | Debug | Processo identificazione correzione bug |
+| **Breakpoint** | Punto Interruzione | Punto pausa esecuzione per debug |
+| **Stack Trace** | Traccia Stack | Sequenza chiamate funzioni a errore |
+| **Logging** | Registrazione | Salvataggio eventi sistema per analisi |
+| **Environment** | Ambiente | Contesto esecuzione applicazione |
+| **Production** | Produzione | Ambiente utenti finali |
+| **Staging** | Staging | Ambiente test pre-produzione |
+| **Development** | Sviluppo | Ambiente sviluppatori |
+| **Build** | Build/Compilazione | Processo creazione eseguibile da sorgente |
+| **Release** | Rilascio | Versione software distribuita |
+| **Rollback** | Rollback | Ripristino versione precedente |
+| **Deployment** | Distribuzione | Installazione software ambiente target |
+| **Migration** | Migrazione | Spostamento dati/sistema nuovo ambiente |
+| **Dependency** | Dipendenza | Componente richiesto da altro |
+| **Interface** | Interfaccia | Contratto metodi classe deve implementare |
+| **Class** | Classe | Template creazione oggetti |
+| **Object** | Oggetto | Istanza classe |
+| **Instance** | Istanza | Oggetto specifico di classe |
+| **Method** | Metodo | Funzione appartenente classe |
+| **Function** | Funzione | Blocco codice esegue task specifico |
+| **Variable** | Variabile | Contenitore dati modificabile |
+| **Constant** | Costante | Valore immutabile |
+| **Namespace** | Spazio Nomi | Contenitore organizzare identificatori |
+| **Recursion** | Ricorsione | Funzione chiama se stessa |
+| **Iteration** | Iterazione | Ripetizione operazioni in ciclo |
+| **Algorithm** | Algoritmo | Sequenza passi risolvere problema |
+| **Complexity** | Complessità | Misura risorse richieste algoritmo |
+| **Big O Notation** | Notazione Big O | Notazione matematica complessità algoritmica |
+| **Optimization** | Ottimizzazione | Migliorare efficienza codice |
+| **Benchmark** | Benchmark | Test prestazioni per confronto |
+| **Profiling** | Profilazione | Analisi prestazioni runtime |
+| **Bit** | Bit | Unità minima informazione binaria |
+| **Byte** | Byte | 8 bit, unità base dati |
+| **Word** | Word/Parola | Unità dati elaborata CPU (16/32/64 bit) |
+| **Register** | Registro | Memoria veloce interno CPU |
+| **Instruction Set** | Set Istruzioni | Insieme comandi supportati CPU |
+| **Pipeline** | Pipeline | Esecuzione parallela istruzioni CPU |
+| **Clock Cycle** | Ciclo Clock | Unità tempo elaborazione CPU |
+| **Bandwidth** | Larghezza Banda | Quantità dati trasmessi per unità tempo |
+| **Big-Endian** | Big-Endian | Byte più significativo primo in memoria |
+| **Little-Endian** | Little-Endian | Byte meno significativo primo in memoria |
+| **Endianness** | Ordine Byte | Ordine memorizzazione byte in memoria |
+| **Polish Notation** | Notazione Polacca | Operatore prima operandi (prefissa) |
+| **Reverse Polish Notation** | Notazione Polacca Inversa | Operatore dopo operandi (postfissa) |
+| **Infix Notation** | Notazione Infissa | Operatore tra operandi (standard) |
+| **Binary** | Binario | Sistema numerazione base 2 |
+| **Hexadecimal** | Esadecimale | Sistema numerazione base 16 |
+| **Octal** | Ottale | Sistema numerazione base 8 |
+| **Decimal** | Decimale | Sistema numerazione base 10 |
+| **Two's Complement** | Complemento a Due | Rappresentazione numeri negativi |
+| **Signed** | Con Segno | Numero può essere positivo/negativo |
+| **Unsigned** | Senza Segno | Numero solo positivo |
+| **Floating Point** | Virgola Mobile | Numeri decimali precisione variabile |
+| **Fixed Point** | Virgola Fissa | Numeri decimali precisione fissa |
+| **Bitwise** | Bit a Bit | Operazioni su singoli bit |
+| **Shift** | Scorrimento | Spostamento bit destra/sinistra |
+| **Mask** | Maschera | Pattern bit per filtrare/modificare |
+| **Flag** | Flag/Bandiera | Bit singolo indicatore stato booleano |
+| **Compiler** | Compilatore | Traduce codice sorgente in eseguibile |
+| **Interpreter** | Interprete | Esegue codice riga per riga |
+| **Linker** | Linker/Collegatore | Collega file oggetto in eseguibile |
+| **Loader** | Caricatore | Carica programma in memoria per esecuzione |
+| **Runtime** | Runtime | Ambiente esecuzione programma |
+| **Executable** | Eseguibile | File programma eseguibile |
+| **Library** | Libreria | Raccolta codice riutilizzabile |
+| **Static Linking** | Collegamento Statico | Libreria inclusa in eseguibile |
+| **Dynamic Linking** | Collegamento Dinamico | Libreria caricata runtime |
+| **Lazy Evaluation** | Valutazione Pigra | Calcolo espressione quando necessario |
+| **Eager Evaluation** | Valutazione Immediata | Calcolo espressione subito |
+| **Short-circuit** | Cortocircuito | Valutazione espressione fermata anticipata |
+| **Hoisting** | Sollevamento | Dichiarazioni spostate inizio scope |
+| **Closure** | Chiusura | Funzione con accesso variabili esterne |
+| **Scope** | Ambito | Zona visibilità variabile |
+| **Lexical Scope** | Ambito Lessicale | Scope determinato posizione codice |
+| **Dynamic Scope** | Ambito Dinamico | Scope determinato chiamate runtime |
+| **Lazy Loading** | Caricamento Pigro | Caricare risorsa quando necessaria |
+| **Eager Loading** | Caricamento Immediato | Caricare tutte risorse subito |
+| **Tree** | Albero | Struttura dati gerarchica |
+| **Graph** | Grafo | Struttura dati nodi e archi |
+| **Queue** | Coda | Struttura dati FIFO |
+| **Linked List** | Lista Concatenata | Sequenza nodi collegati puntatori |
+| **Array** | Array | Collezione elementi indicizzati |
+
+
 ## 🧪 Testing
 
 | Acronimo | Termine Inglese | Traduzione | Spiegazione |
@@ -59,7 +227,7 @@
 | Acronimo | Termine Inglese | Traduzione | Spiegazione |
 |----------|-----------------|------------|-------------|
 | **VCS** | Version Control System | Sistema Controllo Versione | Sistema per tracciare modifiche codice |
-| **SCM** | Source Control Management | Gestione Controllo Sorgente | Gestione repository codice |
+| **SCM** | Source Control Management | Gestione Controllo Sorgente | Gestione repository codice (vedi anche SCM in Business per Supply Chain) |
 | **PR** | Pull Request | Richiesta di Pull | Richiesta merge modifiche (GitHub) |
 | **MR** | Merge Request | Richiesta di Merge | Richiesta merge modifiche (GitLab) |
 | **CR** | Code Review | Revisione Codice | Processo revisione modifiche |
@@ -278,7 +446,6 @@
 | **LCP** | Largest Contentful Paint | Visualizzazione Contenuto Principale | Elemento principale caricato |
 | **FID** | First Input Delay | Ritardo Primo Input | Tempo risposta prima interazione |
 | **CLS** | Cumulative Layout Shift | Spostamento Layout Cumulativo | Stabilità visuale pagina |
-| **CDN** | Content Delivery Network | Rete Distribuzione Contenuti | Rete cache distribuita |
 | **Gzip** | GNU zip | GNU zip | Algoritmo compressione |
 | **Brotli** | Brotli | Brotli | Algoritmo compressione moderno |
 | **Minification** | Minification | Minificazione | Riduzione dimensioni file |
@@ -395,7 +562,7 @@
 | **LoRa** | Long Range | Lungo Raggio | Tecnologia comunicazione wireless lungo raggio |
 | **LoRaWAN** | Long Range Wide Area Network | Rete Area Estesa Lungo Raggio | Protocollo rete per LoRa |
 | **Zigbee** | Zigbee | Zigbee | Protocollo wireless mesh per IoT |
-| **Thread** | Thread | Thread | Protocollo rete mesh IP per IoT |
+| **Thread Protocol** | Thread | Thread | Protocollo rete mesh IP per IoT |
 | **6LoWPAN** | IPv6 over Low-Power Wireless PAN | IPv6 su PAN Wireless Basso Consumo | Standard IPv6 per reti wireless IoT |
 | **LTE-M** | Long-Term Evolution for Machines | Evoluzione Lungo Termine per Macchine | Standard cellulare per IoT |
 | **NB-IoT** | Narrowband IoT | IoT Banda Stretta | Tecnologia cellulare LPWAN per IoT |
@@ -403,6 +570,12 @@
 | **DMA** | Direct Memory Access | Accesso Diretto Memoria | Trasferimento dati senza CPU |
 | **Watchdog** | Watchdog Timer | Timer Watchdog | Timer reset automatico sistema bloccato |
 | **Bootloader** | Bootloader | Caricatore Avvio | Programma avvio e caricamento firmware |
+| **Bit Banging** | Bit Banging | Bit Banging | Implementazione protocollo software controllando pin GPIO manualmente |
+| **Pull-up Resistor** | Resistenza Pull-up | Resistenza Pull-up | Resistenza porta pin a livello alto |
+| **Pull-down Resistor** | Resistenza Pull-down | Resistenza Pull-down | Resistenza porta pin a livello basso |
+| **Debouncing** | Debouncing | Antirimbalzo | Filtraggio rimbalzi meccanici pulsanti |
+| **Polling** | Polling | Polling | Interrogazione ciclica stato dispositivo |
+| **Interrupt** | Interrupt | Interruzione | Segnale asincrono sospende esecuzione normale |
 
 
 ## 📊 Data & Analytics
@@ -514,6 +687,6 @@
 
 ---
 
-**Totale acronimi: ~324**
+**Totale acronimi: ~323 | Termini: ~174 | TOTALE: ~497**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
