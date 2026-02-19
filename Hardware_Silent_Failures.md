@@ -1,6 +1,6 @@
-# Hardware Silent Failures — Technical Reference
+# Hardware Silent Failures — Riferimento Tecnico
 
-> Fenomeni hardware che causano esecuzione incorretta del software, spesso in modo silenzioso e non rilevabile. Dalla fisica dei transistor ai difetti fisici del PCB, fino agli standard safety-critical.
+Fenomeni hardware che causano esecuzione incorretta del software, spesso in modo silenzioso e non rilevabile. Dalla fisica dei transistor ai difetti fisici del PCB, fino agli standard safety-critical.
 
 ---
 
