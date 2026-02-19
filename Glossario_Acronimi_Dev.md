@@ -123,6 +123,33 @@
 | **Error** | Errore | Problema impedisce esecuzione corretta |
 | **Warning** | Avviso | Segnalazione problema potenziale |
 | **Bug** | Bug | Difetto software causa comportamento errato |
+| **Edge Case** | Caso Limite | Situazione rara/estrema ai confini delle specifiche |
+| **Corner Case** | Caso Angolo | Combinazione multipli edge case simultanei |
+| **Happy Path** | Percorso Felice | Scenario ideale senza errori o eccezioni |
+| **Fallback** | Fallback | Soluzione alternativa se principale fallisce |
+| **Graceful Degradation** | Degradazione Graduale | Sistema continua funzionare parzialmente con funzionalità ridotte |
+| **Fail-fast** | Fallimento Rapido | Interrompere esecuzione immediatamente al primo errore |
+| **Fail-safe** | A Prova di Errore | Sistema sicuro anche in caso errore |
+| **Defensive Programming** | Programmazione Difensiva | Anticipare e gestire errori possibili preventivamente |
+| **Error Propagation** | Propagazione Errore | Passaggio errore lungo call stack a chiamante |
+| **Circuit Breaker** | Interruttore Circuito | Pattern prevenire cascata errori in sistemi distribuiti |
+| **Retry Logic** | Logica Riprova | Ripetizione automatica operazione fallita |
+| **Exponential Backoff** | Backoff Esponenziale | Attesa crescente esponenziale tra tentativi retry |
+| **Panic** | Panic | Interruzione fatale immediata programma (Go, Rust) |
+| **Recovery** | Recupero | Gestione e recupero da panic/crash |
+| **Assertion** | Asserzione | Verifica condizione deve essere vera, altrimenti errore |
+| **Smoke Test** | Test Fumo | Test rapido funzionalità principali base |
+| **Sanity Test** | Test Sanità | Verifica veloce ragionevolezza risultati |
+| **Regression Test** | Test Regressione | Verifica nessuna funzionalità precedente regredita |
+| **Integration Test** | Test Integrazione | Test interazione tra componenti |
+| **Unit Test** | Test Unitario | Test singola unità/funzione codice isolata |
+| **Flaky Test** | Test Instabile | Test passa/fallisce casualmente senza modifiche |
+| **Test Fixture** | Fixture Test | Dati/ambiente setup fisso per test |
+| **Test Double** | Sostituto Test | Oggetto sostituisce dipendenza reale (Mock/Stub/Fake/Spy) |
+| **Fake** | Fake | Implementazione funzionante semplificata per test |
+| **Spy** | Spy | Mock registra chiamate per verifica |
+| **Redundancy** | Ridondanza | Duplicazione componenti critici per affidabilità |
+| **Failover** | Failover | Switch automatico a sistema backup |
 | **Debug** | Debug | Processo identificazione correzione bug |
 | **Rubber Duck Debugging** | Rubber Duck Debugging | Debug Papera Gomma | Tecnica debug spiegando codice ad oggetto inanimato |
 | **Program Slicing** | Program Slicing | Slicing Programma | Estrazione subset codice rilevante per comportamento specifico |
@@ -724,6 +751,6 @@
 
 ---
 
-**Totale acronimi: ~329 | Termini: ~205 | TOTALE: ~534**
+**Totale acronimi: ~329 | Termini: ~233 | TOTALE: ~562**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
