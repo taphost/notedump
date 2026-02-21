@@ -37,6 +37,8 @@
 | **PP** | Pair Programming | Programmazione a Coppie | Due sviluppatori su stesso codice |
 | **Mob Programming** | Mob Programming | Programmazione di Gruppo | Team intero su stesso codice |
 | **RAD** | Rapid Application Development | Sviluppo Rapido Applicazioni | Metodologia sviluppo veloce iterativo |
+| **SDLC** | Software Development Life Cycle | Ciclo Vita Sviluppo Software | Processo completo sviluppo software dalla concezione al rilascio |
+| **TLA+** | Temporal Logic of Actions Plus | Logica Temporale Azioni Plus | Linguaggio formale specificazione/verifica sistemi concorrenti |
 
 
 ## 📚 Concetti & Terminologia Fondamentale
@@ -519,6 +521,8 @@
 
 | Acronimo | Termine Inglese | Traduzione | Spiegazione |
 |----------|-----------------|------------|-------------|
+| **DevOps** | Development Operations | Sviluppo Operazioni | Pratica culturale unisce sviluppo e operations per collaborazione |
+| **SRE** | Site Reliability Engineering | Ingegneria Affidabilità Sito | Disciplina applica principi ingegneria software a operations |
 | **CI/CD** | Continuous Integration/Continuous Deployment | Integrazione Continua/Distribuzione Continua | Automazione build, test e deploy |
 | **CD** | Continuous Delivery | Consegna Continua | Codice sempre pronto per il deploy |
 | **SaaS** | Software as a Service | Software come Servizio | Software su cloud via browser |
@@ -751,6 +755,6 @@
 
 ---
 
-**Totale acronimi: ~329 | Termini: ~233 | TOTALE: ~562**
+**Totale acronimi: ~333 | Termini: ~233 | TOTALE: ~566**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
