@@ -543,6 +543,13 @@
 | **MTTR** | Mean Time To Recovery | Tempo Medio Recupero | Velocità ripristino |
 | **RPO** | Recovery Point Objective | Obiettivo Punto Recupero | Perdita dati accettabile |
 | **RTO** | Recovery Time Objective | Obiettivo Tempo Recupero | Downtime massimo accettabile |
+| **Feature Flag** | Feature Flag | Interruttore Funzionalità | Attivare/disattivare funzionalità runtime senza rideploy |
+| **Canary Release** | Canary Release | Rilascio Canarino | Rilascio graduale a subset utenti per validazione |
+| **Blue-Green Deployment** | Blue-Green Deployment | Deployment Blu-Verde | Due ambienti identici per switch istantaneo zero-downtime |
+| **Rolling Deployment** | Rolling Deployment | Deployment Progressivo | Aggiornamento graduale istanze una alla volta |
+| **A/B Testing** | A/B Testing | Test A/B | Confronto due versioni con gruppi utenti diversi |
+| **Dark Launch** | Dark Launch | Lancio Oscuro | Deploy codice inattivo per test produzione nascosto |
+| **Shadow Testing** | Shadow Testing | Test Ombra | Traffico reale duplicato per testare nuova versione |
 
 
 ## 🤖 AI & Machine Learning
@@ -755,6 +762,6 @@
 
 ---
 
-**Totale acronimi: ~333 | Termini: ~233 | TOTALE: ~566**
+**Totale acronimi: ~333 | Termini: ~240 | TOTALE: ~573**
 
 📌 **Suggerimento**: Salva questo glossario e consultalo quando incontri nuovi acronimi!
