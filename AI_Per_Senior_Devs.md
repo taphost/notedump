@@ -138,7 +138,7 @@ Commenta dove aggiungere logica futura senza refactoring."
 
 ### 🎯 Perché i Pattern sono CRITICI con LLM
 
-**Problema core:** Le LLM tendono a generare codice procedural/monolitico perché minimizza la "distanza" tra prompt e output. Ma questo crea debito tecnico massiccio.
+**Problema core:** Le LLM tendono a generare codice procedurale/monolitico perché minimizza la "distanza" tra prompt e output. Ma questo crea debito tecnico massiccio.
 
 **I pattern architetturali servono a:**
 1. **Vincolare l'AI** in strutture predicibili (meno allucinazioni)
