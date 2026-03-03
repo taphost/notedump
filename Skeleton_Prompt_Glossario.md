@@ -190,11 +190,17 @@ Uno strumento che formatta automaticamente il codice in modo uniforme: indentazi
 
 La sua configurazione si trova nel file `.prettierrc`.
 
-### CI — Continuous Integration
+### CI/CD — Continuous Integration / Continuous Delivery / Continuous Deployment
 
 Un sistema che esegue automaticamente una serie di controlli (lint, audit, test) ogni volta che carichi del codice su GitHub. Se qualcosa va storto, ti avvisa prima che il problema si propaghi.
 
-Nel prompt, la CI è configurata tramite GitHub Actions.
+**CI (Continuous Integration)** — integra e verifica le modifiche automaticamente ad ogni push.
+
+**CD (Continuous Delivery)** — ogni modifica che passa i test è automaticamente pronta per il deploy, ma richiede ancora una conferma manuale prima di andare in produzione.
+
+**CD (Continuous Deployment)** — ogni modifica che passa i test viene deployata automaticamente, senza intervento umano.
+
+Nel prompt, CI/CD è configurato tramite GitHub Actions.
 
 ### GitHub Actions / Workflows
 
