@@ -1,7 +1,9 @@
 # BOLSTER — Bug, Organization, Logging, Specs, Testing, Error, Review
 
 **Ambito:** Progetti Frontend — HTML, CSS, JavaScript
+
 **Uso:** Protocollo per agenti AI
+
 **Note:** Le fasi che richiedono una decisione dell'utente sono esplicitamente indicate
 
 ---
