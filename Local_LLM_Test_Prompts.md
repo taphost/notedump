@@ -4,41 +4,41 @@
 
 ---
 
-# Sezione A — Vibe Coder
+## Sezione A — Vibe Coder
 
-## 1. Snake
+### 1. Snake
 
 > Build me Snake. Single HTML file, vanilla JS, no libraries. The snake moves on a grid, eats food, grows, and dies if it hits a wall or itself. Keyboard arrows to control it. Show the score. Make it look clean — not a tutorial project.
 
 ---
 
-## 2. 2048
+### 2. 2048
 
-> Build me 2048. Single HTML file, vanilla JS, no libraries. Arrow keys to slide tiles, same numbers merge, get to 2048 to win. Show the score and a best score that survives the page reload. Make it feel satisfying to play — smooth, responsive, nice to look at.
+> Build me 2048. Single HTML file, vanilla JS, no libraries. Arrow keys to slide tiles, same numbers merge, get to 2048 to win. Show the score and a best score that sticks around. Make it feel satisfying to play — smooth, responsive, nice to look at.
 
 ---
 
-## 3. Minesweeper
+### 3. Minesweeper
 
 > Build me Minesweeper. Single HTML file, vanilla JS, no libraries. Left click to reveal, right click to flag. Generate the minefield after the first click so you never die immediately. Show how many mines are left and a timer. Let me choose between easy, medium and hard. Make it look sharp, not like Windows 95.
 
 ---
 
-## 4. Game of Life
+### 4. Game of Life
 
 > Build me a Game of Life. Single HTML file, vanilla JS, no libraries. Make the grid fill most of the screen, cells should look alive — not just grey squares. Give me a way to start/stop it, clear it, and randomize it. I want to be able to draw cells with the mouse too. Make it feel cool to look at, not like a university assignment.
 
 ---
 
-## 5. Tetris
+### 5. Tetris
 
 > Build me Tetris. Single HTML file, vanilla JS, no libraries. Classic pieces, keyboard controls, game over when the stack hits the top. Make it look good — dark, moody, something you'd actually want to stare at. Score goes up when you clear lines. Don't make it ugly.
 
 ---
 
-# Sezione B — Spec Driven
+## Sezione B — Spec Driven
 
-## 1. Snake
+### 1. Snake
 
 Build a Snake game. Single HTML file, vanilla JS, no libraries.
 
@@ -51,7 +51,7 @@ Build a Snake game. Single HTML file, vanilla JS, no libraries.
 
 ---
 
-## 2. 2048
+### 2. 2048
 
 Build a 2048 game. Single HTML file, vanilla JS, no libraries.
 
@@ -64,7 +64,7 @@ Build a 2048 game. Single HTML file, vanilla JS, no libraries.
 
 ---
 
-## 3. Minesweeper
+### 3. Minesweeper
 
 Build Minesweeper. Single HTML file, vanilla JS, no libraries.
 
@@ -77,7 +77,7 @@ Build Minesweeper. Single HTML file, vanilla JS, no libraries.
 
 ---
 
-## 4. Game of Life
+### 4. Game of Life
 
 Build Conway's Game of Life. Single HTML file, vanilla JS, no libraries.
 
@@ -85,16 +85,16 @@ Build Conway's Game of Life. Single HTML file, vanilla JS, no libraries.
 - Simulation runs on a configurable interval
 - Controls: start/stop, clear, randomize
 - Mouse drag to draw/erase cells on the grid
-- Cells and background styled beyond plain grey/white
+- Cell color distinct from background, non-default palette
 
 ---
 
-## 5. Tetris
+### 5. Tetris
 
 Build Tetris. Single HTML file, vanilla JS, no libraries.
 
 - All 7 tetrominoes (I, O, T, S, Z, J, L) with correct colors
-- Arrow keys to move and rotate, down to soft drop
+- Arrow keys to move left/right, up or Z/X to rotate, down to soft drop
 - Full lines clear and collapse the stack
 - Score increases per lines cleared (more lines = more points)
 - Speed increases over time
