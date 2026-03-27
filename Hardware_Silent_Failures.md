@@ -514,9 +514,9 @@ La **bathtub curve** è il modello fondamentale che unifica concettualmente tutt
 
 ```
 Tasso
-di    │\                                        /
-guasto│ \                                      /
-      │  \   ELFR      Useful Life   Wear-out /
+di    │\                                                  /
+guasto│ \                                                /
+      │  \   ELFR       Useful Life         Wear-out    /
       │   \____________________________________________/
       │
       └──────────────────────────────────────────────── Tempo
