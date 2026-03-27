@@ -621,7 +621,7 @@ Il tratto comune di quasi tutti questi fenomeni è la **silenziosità**: il sist
 
 Tutti i fenomeni descritti si collocano lungo la **bathtub curve** dell'affidabilità hardware: alcuni dominano la fase di Early Life Failure Rate — ELFR (SDC, dielectric breakdown precoce), altri sono casuali durante la vita utile (SEU, voltage droops, cross-talk), altri ancora crescono inesorabilmente con l'invecchiamento del componente (BTI, HCI, electromigration, fretting, ossidazione).
 
-Nei sistemi moderni — soprattutto nei grandi cluster per AI training con migliaia di GPU — questi problemi si **sommano, interagiscono e si amplificano in cascade**. Un chip con BTI e HCI avanzati diventa più suscettibile agli SDC; tin whisker su un connettore DDR causano bit flip che l'ECC non riesce a correggere; cicli termici accelerano contemporaneamente electromigration, fretting e crescita dendritica; ground bounce su PCB ad alta densità introduce errori che sembrano software ma sono hardware.
+Nei sistemi moderni — soprattutto nei grandi cluster per AI training con migliaia di GPU — questi problemi si **sommano, interagiscono e si amplificano in modo cumulativo**. Un chip con BTI e HCI avanzati diventa più suscettibile agli SDC; tin whisker su un connettore DDR causano bit flip che l'ECC non riesce a correggere; cicli termici accelerano contemporaneamente electromigration, fretting e crescita dendritica; ground bounce su PCB ad alta densità introduce errori che sembrano software ma sono hardware.
 
 I settori safety-critical (automotive, aerospazio, medicale, spazio) hanno risposto a questi fenomeni con standard rigorosi — ISO 26262, DO-254, TMR, lockstep — che il mondo del software commerciale e dell'AI su larga scala non ha ancora adottato sistematicamente.
 
