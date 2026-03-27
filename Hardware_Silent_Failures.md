@@ -240,7 +240,7 @@ A basse temperature il comportamento elettrico delle celle DRAM cambia rispetto 
 Le celle diventano più "rigide" a basse temperature: le operazioni di write/erase richiedono tensioni più alte del nominale. Se il controller non compensa dinamicamente, il bit error rate aumenta in modo silenzioso.
 
 **Condensatori elettrolitici**
-La viscosità dell'elettrolita aumenta drasticamente con il freddo, riducendo la capacità effettiva. Il risultato è instabilità nell'alimentazione che si traduce in **voltage drops** e comportamenti imprevedibili della CPU.
+La viscosità dell'elettrolita aumenta drasticamente con il freddo, riducendo la capacità effettiva. Il risultato è instabilità nell'alimentazione che si traduce in **voltage droops** e comportamenti imprevedibili della CPU.
 
 **Crystal Oscillator Frequency Drift**
 I cristalli al quarzo usati come clock di sistema variano la loro frequenza di risonanza con la temperatura. Un oscillatore fuori spec produce un clock leggermente diverso dal nominale → timing violations su bus e interfacce.
