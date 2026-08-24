@@ -92,7 +92,7 @@ Ensure consistency and prevent drift:
 ---
 
 # Usage
-Apply **RIDL_LLM_Coding_Prompt** to:
+Apply **RIDL LLM Coding Prompt** to:
 - analysis  
 - planning  
 - system design  
