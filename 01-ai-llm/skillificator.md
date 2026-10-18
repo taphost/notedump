@@ -258,14 +258,10 @@ Se fallisce → problema è nel MCP, non nella skill
 - Documentazione ufficiale: [URL]
 
 ```
-
----
-
 #### C) File Aggiuntivi (Opzionali)
 
 **Struttura cartelle completa:**
 
-```
 nome-skill/
 ├── SKILL.md                    # File principale (obbligatorio)
 ├── scripts/                    # Script eseguibili (opzionale)
