@@ -1,4 +1,4 @@
-# RIDL LLM Coding Prompt
+# RIDL — LLM Coding Prompt
 
 ## Purpose
 This prompt defines the **RIDL (Research-Integrated Development Loop)** extended with specific methodologies for high‑quality, stable, and controllable **LLM-assisted coding workflows**.
